@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lookym Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title">Lookym Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+   
+    <form id="survey-form" action="#">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label>
+        <label> How did you find out about our website?
+          <select id="dropdown">
+            <option value="">Select one </option>
+            <option value="1">A friend or family member</option>
+            <option value="2">An online search</option>
+            <option value="3">An advertisement</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Do you like the design of our website?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> I like</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> I litle</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label> What do you like most about Lookym?
+          <select id="dropdown2">
+            <option value="">Select an option</option>
+            <option value="1">Videos of shops windows</option>
+            <option value="2">Imagens of shops windows</option>
+            <option value="3">The ease of use</option>
+            <option value="4">The content</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>what do you like the most about our website? <small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="front-end-projects" />  videos of general window displays of different items?</label>
+        <label><input type="checkbox" class="inline" value="back-end-projects" /> videos of women's clothing showcases?</label>
+        <label><input type="checkbox" class="inline" value="data-visualization" /> Videos of women's shoes showcases?</label>
+        <label><input type="checkbox" class="inline" value="challenges" /> Videos of menswear showcases?</label>
+        <label><input type="checkbox" class="inline" value="open-source-community" /> Videos of men's shoes showcases?</label>
+        <label><input type="checkbox" class="inline" value="gitter-help-rooms" /> Images instead of videos?</label>
+        <label><input type="checkbox" class="inline" value="videos" /> Videos inside the stores?</label>
+        <label><input type="checkbox" class="inline" value="city-meetups" /> live, updated window displays?</label>
+        <label><input type="checkbox" class="inline" value="wiki" /> live videos?</label>
+        <label><input type="checkbox" class="inline" value="forum" /> Details of the garments shown?</label>
+        <label><input type="checkbox" class="inline" value="additional-courses" /> Other</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="I would like to ..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
